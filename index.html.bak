@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="" lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>Four O'clock Farms</title>
+    <meta name="author" content="Jason Nelke" />
+    <meta name="description" content="Homepage for Four O'clock Farms" />
+    <meta name="keywords" content="farm, nebraska, wheat, grains, farming, case, lgbt, dryland, agriculture, agronomy, agrology, lodgepole" />
+    <meta name="generator" content="BlueGriffon wysiwyg editor" />
+    <style type="text/css">
+html {
+  background-color: #7a7979;
+  background-image: url("_DSC0508.JPG");
+  background-size: fill;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+}
+
+body {
+  background-color: #7a7979;
+  color: white;
+}
+
+:link {
+  color: #99ff99;
+}
+
+:link:active {
+  color: #99ffff;
+}
+
+:link:visited {
+  color: #ffcc99;
+}
+
+</style></head>
+  <body>
+    <div role="banner" style="text-align: right; background-color: transparent;">Home
+      About Contact</div>
+    <p> </p>
+  </body>
+</html>

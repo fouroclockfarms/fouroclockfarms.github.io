@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Four O'clock Farms, Lodgepole, Nebraska</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="font-awesome.min.css" rel="stylesheet">
+<link href="medievaltown.css" rel="stylesheet">
+<link href="wb18_medieval_town.css" rel="stylesheet">
+<script src="jquery-1.12.4.min.js"></script>
+<script src="jquery.ui.effect.min.js"></script>
+<script src="jquery.pagepiling.min.js"></script>
+<script>   
+   $(document).ready(function()
+   {
+      var $sections = $('#wb_home,#wb_about,#wb_services,#wb_contact');
+      $sections.addClass('snap-scroll');
+      $sections.wrapAll("<div id='pagepiling' />");
+      $sections.css("position", "absolute");
+      if ($(window).width() >= 480)
+      {
+         $('#pagepiling').pagepiling(
+         {
+            sectionSelector: '.snap-scroll',
+            direction: 'horizontal',
+            loopBottom: true,
+            loopTop: true,
+            scrollingSpeed: 1000,
+            easing: 'easeInOutCirc',
+            afterRender: function()
+            {
+               $('#SnapScroll1 a').on('click', $.fn.pagepiling.moveTo($(this).attr('href')));
+            },
+            onLeave: function(index, nextIndex, direction)
+            {
+               $('#SnapScroll1 .active').removeClass('active');
+               $('#SnapScroll1 a').eq(nextIndex-1).addClass('active');
+            }
+         });
+      }
+   });
+</script>
+</head>
+<body>
+   <div id="header">
+      <div id="wb_Heading1" style="display:inline-block;z-index:0;">
+         <h1 id="Heading1">Four O'clock Farms</h1>
+      </div>
+   </div>
+   <div id="wb_home">
+      <div id="home-overlay"></div>
+      <div id="home">
+         <div id="wb_Card6" style="display:flex;z-index:1;" class="card">
+            <div id="Card6-card-body">
+               <div id="Card6-card-item0">Four O'clock Farms</div>
+               <div id="Card6-card-item1">Lodgepole, NE</div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div id="wb_about">
+      <div id="about-overlay"></div>
+      <div id="about">
+         <div id="wb_Heading5" style="display:inline-block;z-index:2;">
+            <h2 id="Heading5">ABOUT</h2>
+         </div>
+         <div id="wb_Text1">
+            <span style="color:#F5EFD7;">Four O'clock farms is an LBGTQ owned and operated small grains farm, specializing in red hard winter wheat as well as varieties of millet and sorghum.&nbsp; Built circa 1920, the farmhouse is constructed of several building salvaged from around Cheyenne County, including the former General&nbsp; Store and Post Office from Brownson, NE. </span>
+         </div>
+      </div>
+   </div>
+   <div id="wb_services">
+      <div id="services-overlay"></div>
+      <div id="services">
+         <div id="wb_Heading2" style="display:inline-block;z-index:4;">
+            <h2 id="Heading2">Connect with us Online</h2>
+         </div>
+         <div id="wb_Text2">
+            <span style="color:#F5EFD7;">You can find us on<br><a href="https://www.instagram.com/fouroclockfarms">INSTAGRAM</a><br>or<br><a re="me" href="https://twit.social/@fagrology">MASTODON</a></span>
+         </div>
+      </div>
+   </div>
+   <div id="StickyLayer" style="position:fixed;text-align:left;left:auto;right:25px;top:auto;bottom:25px;width:50px;height:50px;z-index:16;">
+      <div id="wb_up-arrow" style="position:absolute;left:9px;top:8px;width:24px;height:24px;text-align:center;z-index:6;">
+         <a href="#home" onclick="$.scrollify.move('#1');return false;"><div id="up-arrow"><i class="fa fa-angle-up"></i></div></a></div>
+   </div>
+   <ul id="SnapScroll1">
+      <li><a class="active" href="#1"><span class="label">Home</span></a></li>
+      <li><a href="#2"><span class="label">About</span></a></li>
+      <li><a href="#3"><span class="label">Services</span></a></li>
+      <li><a href="#4"><span class="label">Contact</span></a></li>
+   </ul>
+   <div id="wb_contact">
+      <div id="contact-overlay"></div>
+      <div id="contact">
+         <div class="col-1">
+         </div>
+         <div class="col-2">
+            <div id="wb_Heading3" style="display:inline-block;width:100%;z-index:7;">
+               <h1 id="Heading3">CONTACT</h1>
+            </div>
+            <input type="text" id="Editbox1" style="display:block;width:100%;height:36px;z-index:8;" name="Editbox1" value="" spellcheck="false" placeholder="Enter a valid email address">
+            <input type="submit" id="Button1" name="" value="Send" style="display:inline-block;width:149px;height:33px;z-index:9;">
+            <div id="wb_Image6" style="display:inline-block;width:100%;height:auto;z-index:10;">
+               <img src="LOGO_WEB_white.png" id="Image6" alt="" width="646" height="639">
+            </div>
+            <div id="wb_Text3">
+               <span style="color:#FFFFEF;">© Copyright 2023 Four O'clock Farms - All Rights Reserved</span>
+            </div>
+         </div>
+         <div class="col-3">
+         </div>
+      </div>
+   </div>
+</body>
+</html>
