@@ -78,7 +78,7 @@ h6, .h6
    display: inline;
 }
 a.but:link, a.but:visited {
-  background-color: white;
+  background-color:rgb(255,255,255,0.3);
   color: black;
   border: 2px solid black;
   padding: 10px 20px;
@@ -88,7 +88,7 @@ a.but:link, a.but:visited {
 }
 
 a.but:hover, a.but:active {
-  background-color: red;
+  background-color:rgb(255,0,0,0.3;
   color: white;
 }
 .CustomStyle
