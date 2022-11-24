@@ -85,13 +85,13 @@ a.but:link, a.but:visited {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-weght: bold;
+  font-weight: bold;
 }
 
 a.but:hover, a.but:active {
   background-color:rgb(255,0,0,0.3);
   color: white;
-  font-weght: bold;
+  font-weight: bold;
 }
 .CustomStyle
 {
