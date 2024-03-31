@@ -14,6 +14,22 @@
    <p>Expand each section below for more information. This will be the first place I update in case of an instance emergency
    </p>
       <button type="button" class="noncollapsible"><a href="https://fouroclockfarms.club" target="_blank" rel="noopener noreferrer">Instance Home</a></button>
+		<button type="button" class="collapsible">+Contact the Admin</button>
+      <div class="content">
+		<p><a href="https://signal.group/#CjQKIGKeKHryKoQ0hbNCaFhwQidyoWpXWYwUgOLz6ZQNdk3eEhBZ6h32H-pjt2tUpSq9LCC-" target="_blank" rel="noopener noreferrer">Via Signal</a></p>
+		<p>Or use the form below:</p>
+		<form action="https://postmail.invotes.com/send" method="post" id="email_form">
+	    <input type="text" name="subject" placeholder="Subject" /><br>
+    		<textarea name="text" rows="10" cols="60" placeholder="Message">Type your message here. Include contact info & name.</textarea><br>
+    		<input type="hidden" name="access_token" value="3djkkwqr20chg8843fd9ndyx" />
+         <input type="hidden" name="success_url" value="https://info.fouroclockfarms.club" />
+    		<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+		    <input id="submit_form" type="submit" value="Send" /><br>
+    <small> Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></small>
+</form>
+<script src="form.js"></script> 
+      </div>		
+		
 		<button type="button" class="collapsible">+Instance Info</button>
       <div class="content">
 Software:		
@@ -148,6 +164,147 @@ Admins:
                 sharing such content is fine. Posting/sharing mutual and
                 community aid is also fine.</li>
           </ol>
+        </div>
+              <button type="button" class="collapsible">HTML Template and Code</button>
+     <div class="content">
+     <small>I got a lot of help off the internet to make this happen, so I figured I'd make it free and easy to share.</small>
+     <p><b>HTML;</b> save as your index.html file.</p>
+<textarea rows="15" cols="65">
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<link href="style.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Roboto Mono'rel='stylesheet'>
+<meta name="robots" content="noindex">
+<title>Page Title</title>
+</head>
+<body>
+<div class="box">
+<h3>Info Page</h3>
+<p>Labeurs age faisait vit cessent. On en il derniere detourne crispent. Six noir tira mort ici. Appel sol carre temps fit amour femme.</p>
+
+<button type="button" class="noncollapsible">Link or Button without Content</button> 
+
+<button type="button" class="collapsible">Button Label</button>
+<div class="content">
+<p>Labeurs age faisait vit cessent. On en il derniere detourne crispent. Six noir tira mort ici. Appel sol carre temps fit amour femme.</p>
+</div>
+
+<button type="button" class="collapsible">Button Label</button>
+<div class="content">
+<p>Labeurs age faisait vit cessent. On en il derniere detourne crispent. Six noir tira mort ici. Appel sol carre temps fit amour femme.</p>
+</div>
+
+<button type="button" class="collapsible">Button Label</button>
+<div class="content">
+<p>Labeurs age faisait vit cessent. On en il derniere detourne crispent. Six noir tira mort ici. Appel sol carre temps fit amour femme.</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
+</textarea>
+
+<p><b>CSS;</b> place in style.css file</p>
+<textarea rows="15" cols="65">
+/* Page Styles */
+body {
+background-color: #17063B;
+font-family: 'Roboto Mono';
+}
+
+a {
+text-decoration: none;
+color: #444;
+}
+
+a:hover {
+color: #ffffff;
+}
+
+.box {
+width: 50%;
+margin:auto;
+background-color: #ffffff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Button Style */
+.collapsible {
+  background-color: #858AFA;
+  border-radius: 10px;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'Roboto Mono';
+}
+
+.noncollapsible {
+  background-color: #858AFA;
+  border-radius: 10px;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'Roboto Mono';
+}
+
+/* Button Hover Action */
+.active, .collapsible:hover {
+  background-color: #563ACC;
+  color: #ffffff;
+}
+
+.active, .noncollapsible:hover {
+  background-color: #563ACC;
+  color: #ffffff;
+}
+
+
+/* Style the collapsible content */
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  border-radius: 10px;
+} 
+</textarea>
+<p><b>JavaScript;</b> place in script.js file</p>
+<textarea rows="15" cols="65">
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+</textarea>
         </div>
       </div>
 <script src="script.js"></script>

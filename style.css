@@ -17,9 +17,14 @@ height: 25px;
 td {
 vertical-align: top;
 }
-
+textarea {
+	white-space: pre;
+  overflow-wrap: normal;
+  overflow-x: scroll;
+  }
+  
 .box {
-width: 500px;
+width: 50%;
 margin:auto;
 background-color: #ffffff;
 padding: 20px;
