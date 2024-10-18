@@ -2,8 +2,7 @@
 <html>
 	<head>
 	   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-	   <link rel="me" href="https://fouroclockfarms.club/@jason">
-	  <link href="style.css" rel="stylesheet">
+	   <link href="style.css" rel="stylesheet">
 	   <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
       <meta name="robots" content="noindex">
 		<title>Fouroclockfarms.club Info Page</title>
@@ -18,22 +17,32 @@
 		<button type="button" class="collapsible">+Contact the Admin</button>
       <div class="content">
 		<p><a href="https://signal.group/#CjQKIGKeKHryKoQ0hbNCaFhwQidyoWpXWYwUgOLz6ZQNdk3eEhBZ6h32H-pjt2tUpSq9LCC-" target="_blank" rel="noopener noreferrer">Via Signal</a></p>
-		
+		<p>Or use the form below:</p>
+		<form action="https://postmail.invotes.com/send" method="post" id="email_form">
+	    <input type="text" name="subject" placeholder="Subject" /><br>
+    		<textarea name="text" rows="10" cols="60" placeholder="Message">Type your message here. Include contact info & name.</textarea><br>
+    		<input type="hidden" name="access_token" value="3djkkwqr20chg8843fd9ndyx" />
+         <input type="hidden" name="success_url" value="https://info.fouroclockfarms.club" />
+    		<input type="hidden" name="error_url" value=".?message=Email+could+not+be+sent.&isError=1" />
+		    <input id="submit_form" type="submit" value="Send" /><br>
+    <small> Powered by <a href="https://postmail.invotes.com" target="_blank">PostMail</a></small>
+</form>
+<script src="form.js"></script> 
       </div>		
 		
 		<button type="button" class="collapsible">+Instance Info</button>
       <div class="content">
 Software:		
 		<ul>
-			<li>Mastodon: 4.3.0-alpha.3+glitch</li>
-			<li>Ruby: 3.2.3p157</li>
-			<li>PostgreSQL: 15.5</li>
+			<li>Mastodon: 4.3.0-beta.1+glitch</li>
+			<li>Ruby: 3.3.4p94</li>
+			<li>PostgreSQL: 15.7</li>
 			<li>Redis: 7.0.15</li>
 		</ul>
-Disk Usage (updated Apr 25, 2024):
+Disk Usage (updated Mar 30):
 <ul>
-<li>Database: 5.92GB</li>
-<li>Media: 276 GB</li>
+<li>Database: 7.28 GB</li>
+<li>Media: 258 GB</li>
 </ul>
 Admins:
 <ul>
@@ -81,7 +90,7 @@ Admins:
       <button type="button" class="collapsible">+Donate to Server Costs</button>
       <div class="content">     
       <ul>
-		<li><a href="patreon.com/user?u=82516079" target="_blank" rel="noopener noreferrer">Patreon</a></li>
+		<li><a href="https://patreon.com/user?u=82516079&utm_medium=unknown&utm_source=join_link&utm_campaign=creatorshare_creator&utm_content=copyLink" target="_blank" rel="noopener noreferrer">Patreon</a></li>
 		<li><a href="https://paypal.me/jcnelke?country.x=US&locale.x=en_US" target="_blank" rel="noopener noreferrer">Paypal</a></li>     
       </ul>
 
@@ -109,7 +118,7 @@ and pre-emptively defederated all Meta/Threads domains.</p>
       <h3>Code of Conduct:</h3>
       <p><em>The following guidelines are not a legal document, and final
           interpretation is up to the administration of fouroclockfarms.club:</em></p>
-      <p><strong>Use content warnings liberally for:</strong>
+      <p><strong>Please use content warnings liberally for:</strong>
         Nudity/Sexual Content, Drugs/Alcohol, Mental Health, Violence,
         Injuries/Wounds/Hospitalization/etc, Food/Dieting, Politics/World
         Events/etc</p>
@@ -161,13 +170,12 @@ and pre-emptively defederated all Meta/Threads domains.</p>
                 advertising. Self promotion by creators, artists, sw, etc and
                 sharing such content is fine. Posting/sharing mutual and
                 community aid is also fine.</li>
+            <li>Purposefully avoiding proper names for people, places, things, events, technologies, ideologies, philosophies, etc, with the intent to bypass user filters will result in suspension.</li>
           </ol>
         </div>
               <button type="button" class="collapsible">HTML Template and Code</button>
      <div class="content">
-     <small>I got a lot of help off the internet to make this happen, so I figured I'd make it free and easy to share. 
-     You can make it a single page by moving the css and JavaScript into the appropriate tags on the HTML file. make sure
-     to edit the link and script tag in the HTML template if you do.</small>
+     <small>I got a lot of help off the internet to make this happen, so I figured I'd make it free and easy to share.</small>
      <p><b>HTML;</b> save as your index.html file.</p>
 <textarea rows="15" cols="65">
 <!DOCTYPE html>
